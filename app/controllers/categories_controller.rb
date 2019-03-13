@@ -4,6 +4,7 @@ class CategoriesController < ApplicationController
     @categories = Category.all
   end
   def show
+    @courses = Course.where(category_id: [@category.subtree_ids]).order("updated_at DESC")
   end
   def new
     @category = Category.new
