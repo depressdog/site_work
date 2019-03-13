@@ -1,0 +1,18 @@
+= link_to "новая категория", new_category_path, class: 'ui button yellow'
+
+%table.ui.celled.table
+  %thead
+    %tr
+      %th индекс
+      %th название
+      %th родитель
+      %th
+  %tbody
+    - @categories.each_with_index do |category, index|
+      %tr
+        %th= index + 1
+        %th= category.name
+        %th= category.parent.name if category.parent.present?
+        %th
+          =link_to "изменить", edit_category_path(category), class: 'ui button blue'
+          =link_to "удалить", category_path(category), method: :delete, class: 'ui button blue'

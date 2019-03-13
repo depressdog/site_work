@@ -18,6 +18,9 @@
     = f.label :c_age
     = f.text_field :c_age
   .field
+    = f.label :category_id
+    = f.collection_select :category_id, Category.order(:name), :id, :name, { include_blank: true}
+  .field
     = f.label :c_video_url
     = f.text_field :c_video_url
   .field

@@ -36,6 +36,6 @@ class CoursesController < ApplicationController
     end
 
     def course_params
-      params.require(:course).permit(:c_username, :body, :c_phone, :c_email, :c_education, :c_age, :c_video_url, :price)
+      params.require(:course).permit(:c_username, :body, :c_phone, :c_email, :c_education, :c_age, :c_video_url, :price, :category_id)
     end
 end
