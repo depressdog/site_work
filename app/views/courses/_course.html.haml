@@ -1,0 +1,13 @@
+.item
+  %a.ui.small.image{:href => "#{course_path(course)}"}
+    = image_tag "https://semantic-ui.com/images/avatar2/large/kristy.png"
+  .content
+    - if course.c_username.present?
+      = link_to course.c_username, course_path(course)
+    - if course.price.present?
+      .meta
+        цена:
+        = course.price
+    - if course.body.present?
+      .description
+        = course.body

@@ -1,0 +1,26 @@
+= form_for @course, html: {class: 'ui form'} do |f|
+  .field
+    = f.label :c_username
+    = f.text_field :c_username
+  .field
+    = f.label :c_phone
+    = f.text_field :c_phone
+  .field
+    = f.label :c_email
+    = f.text_field :c_email
+  .field
+    = f.label :price
+    = f.text_field :price
+  .field
+    = f.label :c_education
+    = f.text_field :c_education
+  .field
+    = f.label :c_age
+    = f.text_field :c_age
+  .field
+    = f.label :c_video_url
+    = f.text_field :c_video_url
+  .field
+    = f.label :body
+    = f.text_area :body
+  = f.submit "submit", class: 'ui button green'
