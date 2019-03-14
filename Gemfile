@@ -39,6 +39,7 @@ gem 'haml'
 gem 'haml-rails'
 gem 'semantic-ui-sass'
 gem 'ancestry'
+gem 'devise'
 
 group :production do
   gem 'pg', '>= 0.18', '< 2.0'

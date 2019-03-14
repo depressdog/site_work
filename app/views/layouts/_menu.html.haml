@@ -3,7 +3,13 @@
   = link_to "Обьявления", courses_path, class: 'ui button orange'
   = link_to "Категории", categories_path, class: 'ui button orange'
   .right.menu
+    - if user_signed_in?
+      = link_to "#{current_user.email}", user_path(current_user), class: 'ui button blue'
+      = link_to "Выход", destroy_user_session_path, method: :delete, class: 'ui button blue'
+    -else
+      = link_to "Вход", new_user_session_path, class: 'ui button green'
     = link_to "создать обьявление", new_course_path, class: 'ui button orange'
+
 
 -#    <a href="tasks.html" class="ui button blue">просмотреть задания</a>
 -#    <a href="new_task.html" class="ui button blue">создать задание</a>
