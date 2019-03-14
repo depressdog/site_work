@@ -1,8 +1,16 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:destroy, :show, :edit, :update]
   def index
-    @courses = Course.all.order("updated_at DESC")
+    # @courses = Course.all.order("updated_at DESC")
+    # @courses = Course.where(["c_username LIKE ? ","%#{:search}%"]).order("updated_at DESC")
+    @categories = Category.all.order(:name)
+    if params[:c_username]
+      @courses = Course.search(params[:c_username])
+    else
+      @courses = Course.all.order('created_at DESC')
+    end
   end
+
   def show
   end
   def new
