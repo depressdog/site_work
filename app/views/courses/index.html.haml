@@ -2,7 +2,7 @@
   .field
     = text_field_tag :c_username, params[:c_username]
   .field
-    = select_tag "category_id", options_from_collection_for_select(@categories, "id", "name"), include_blank: "категория"
+    = select_tag "category_id", options_from_collection_for_select(@categories, "id", "name", params[:category_id]), include_blank: "категория"
   = submit_tag "search", :name => nil
 
 .ui.items

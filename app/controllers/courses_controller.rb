@@ -4,8 +4,10 @@ class CoursesController < ApplicationController
     # @courses = Course.all.order("updated_at DESC")
     # @courses = Course.where(["c_username LIKE ? ","%#{:search}%"]).order("updated_at DESC")
     @categories = Category.all.order(:name)
-    if params[:c_username]
-      @courses = Course.search(params[:c_username])
+
+    @courses = Course.all.order('created_at DESC')
+    if params[:c_username] and params[:category_id].present?
+      @courses = Course.search(params[:c_username], params[:category_id])
     else
       @courses = Course.all.order('created_at DESC')
     end
