@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :timeoutable, :lockable,
          authentication_keys: [:login]
+
+  has_many :courses
+
   attr_writer :login
   attr_accessor :skip_email_validation
 

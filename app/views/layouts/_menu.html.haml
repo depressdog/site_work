@@ -4,7 +4,7 @@
   = link_to "Категории", categories_path, class: 'ui button orange'
   .right.menu
     - if user_signed_in?
-      = link_to "#{current_user.email}", user_path(current_user), class: 'ui button blue'
+      = link_to "#{current_user.username if current_user.username.present?}", user_path(current_user), class: 'ui button blue'
       = link_to "Выход", destroy_user_session_path, method: :delete, class: 'ui button blue'
     -else
       = link_to "Вход", new_user_session_path, class: 'ui button green'

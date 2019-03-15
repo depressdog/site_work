@@ -5,7 +5,11 @@
   .field
     = f.label :phonenumber
     %br/
-    = f.email_field :phonenumber
+    = f.text_field :phonenumber
+  .field
+    = f.label :username
+    %br/
+    = f.text_field :username
   .field
     = f.label :email
     %br/
@@ -13,6 +17,22 @@
   - if devise_mapping.confirmable? && resource.pending_reconfirmation?
     %div
       Currently waiting confirmation for: #{resource.unconfirmed_email}
+  .field
+    = f.label :education
+    %br/
+    = f.text_field :education
+  .field
+    = f.label :age
+    %br/
+    = f.text_field :age
+  .field
+    = f.label :body
+    %br/
+    = f.text_area :body
+  .field
+    = f.label :video_url
+    %br/
+    = f.text_field :video_url
   .field
     = f.label :password
     %i (leave blank if you don't want to change it)

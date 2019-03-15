@@ -1,5 +1,7 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:destroy, :show, :edit, :update]
+  before_action :authenticate_user!, except: [:index, :show]
+
   def index
     # @courses = Course.all.order("updated_at DESC")
     # @courses = Course.where(["c_username LIKE ? ","%#{:search}%"]).order("updated_at DESC")
@@ -20,10 +22,10 @@ class CoursesController < ApplicationController
   def show
   end
   def new
-    @course = Course.new
+    @course = current_user.courses.build
   end
   def create
-    @course = Course.new(course_params)
+    @course = current_user.courses.build(course_params)
     if @course.save
       redirect_to @course
     else

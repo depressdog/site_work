@@ -1,2 +1,11 @@
+
+= @user.username
 = @user.email
+= @user.phonenumber
+= @user.education
+= @user.age
+= @user.body
+%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "",
+:frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/#{@user.video_url}", :width => "560"}
+
 = link_to "редактировать", edit_user_registration_path
