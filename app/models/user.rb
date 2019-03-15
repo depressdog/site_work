@@ -2,9 +2,10 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :trackable, :timeoutable, :lockable,
+         :recoverable, :rememberable, :trackable, :timeoutable, :lockable,
          authentication_keys: [:login]
   attr_writer :login
+  attr_accessor :skip_email_validation
 
   def login
     @login || self.phonenumber
@@ -28,6 +29,9 @@ class User < ApplicationRecord
   def email_changed?
     false
   end
+  def will_save_change_to_email?
+    false
+  end
   validates :phonenumber, presence: :true, uniqueness: { case_sensitive: false }
-  validates :email, :presence => false, :email => false
+  validates :email, :presence => false, :email => false, uniqueness: false, unless: :skip_email_validation
 end

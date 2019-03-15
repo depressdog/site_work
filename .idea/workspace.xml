@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9216cc0-7907-415f-a035-6d08c2d7968e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../app/models/validatable.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.rakeTasks" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.rakeTasks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/filters_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/filters_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/confirmations/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/confirmations/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/passwords/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/passwords/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/registrations/edit.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/registrations/edit.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/registrations/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/registrations/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/sessions/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/sessions/new.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../config/initializers/devise.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../db/schema.rb" afterDir="false" />
     </list>
@@ -35,9 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="161">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -91,7 +81,7 @@
         <entry file="file://$PROJECT_DIR$/../config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <caret line="36" column="15" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -126,6 +116,7 @@
       <find>reset_password_keys</find>
       <find>confirmation_keys</find>
       <find>authentication_keys</find>
+      <find>email</find>
     </findStrings>
     <replaceStrings>
       <replace>set_category</replace>
@@ -188,13 +179,15 @@
         <option value="$PROJECT_DIR$/../app/views/devise/registrations/new.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/sessions/new.html.haml" />
         <option value="$PROJECT_DIR$/../app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/../config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/../app/models/validatable.rb" />
+        <option value="$USER_HOME$/.zshrc" />
+        <option value="$PROJECT_DIR$/../config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/../db/migrate/20190315103300_update_index_on_users.rb" />
         <option value="$PROJECT_DIR$/../app/models/user.rb" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="940" />
     <option name="height" value="786" />
   </component>
@@ -206,7 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,7 +308,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,19 +444,20 @@
       <updated>1552466954047</updated>
       <workItem from="1552466958872" duration="14541000" />
       <workItem from="1552553418957" duration="14575000" />
-      <workItem from="1552637064054" duration="5046000" />
+      <workItem from="1552637064054" duration="5373000" />
+      <workItem from="1552645152604" duration="1294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34162000" />
+    <option name="totallyTimeSpent" value="35783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -719,24 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/devise/registrations/edit.html.haml">
+    <entry file="file://$PROJECT_DIR$/../app/models/validatable.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/devise/sessions/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/devise/registrations/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="207">
+          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -747,17 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../config/initializers/devise.rb">
+    <entry file="file://$PROJECT_DIR$/../app/views/devise/registrations/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="276">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -768,18 +741,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/models/validatable.rb">
+    <entry file="file://$PROJECT_DIR$/../app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
+        <state relative-caret-position="138">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/views/devise/sessions/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/views/devise/registrations/edit.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.zshrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../db/migrate/20190315103300_update_index_on_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="161">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
         </state>
       </provider>
     </entry>
