@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9216cc0-7907-415f-a035-6d08c2d7968e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/filters_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/filters_app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../db/migrate/20190315103300_update_index_on_users.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../config/initializers/devise.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -445,16 +442,15 @@
       <workItem from="1552466958872" duration="14541000" />
       <workItem from="1552553418957" duration="14575000" />
       <workItem from="1552637064054" duration="5373000" />
-      <workItem from="1552645152604" duration="1294000" />
+      <workItem from="1552645152604" duration="1477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35783000" />
+    <option name="totallyTimeSpent" value="35966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25773746" />
