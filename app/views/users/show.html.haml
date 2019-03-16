@@ -1,11 +1,66 @@
+.ui.grid
+  .five.wide.column
+    .ui.medium.circular.image
+      %img{:alt => "", :src => "https://semantic-ui.com/images/wireframe/image.png"}/
+    %br/
+    = link_to "редактировать", edit_user_registration_path, class: 'fluid ui button blue'
+    = link_to "1", edit_user_registration_path, class: 'fluid ui button green'
+    = link_to "2", edit_user_registration_path, class: 'fluid ui button red'
 
-= @user.username
-= @user.email
-= @user.phonenumber
-= @user.education
-= @user.age
-= @user.body
-%iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "",
-:frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/#{@user.video_url}", :width => "560"}
+  .eleven.wide.column
+    .ui.list
+      .item
+        Ник:
+        = @user.username
+      .item
+        Номер телефона:
+        = @user.phonenumber
+      .item
+        Имейл:
+        = @user.email
+      .item
+        Образование:
+        = @user.education
+      .item
+        мои навыки:
+        - (0..5).each do
+          %a.ui.label
+            Tag
+      .item
+        Мой возраст:
+        = @user.age
+      .item Локация: Ukr, zp
+      .item пол: мужской
+      .item
+        О себе:
+        = @user.body
+      .item
+        Фото:
+        .ui.small.images
+          %img{:src => "https://semantic-ui.com/images/wireframe/image.png"}/
+          %img{:src => "https://semantic-ui.com/images/wireframe/image.png"}/
+          %img{:src => "https://semantic-ui.com/images/wireframe/image.png"}/
+          %img{:src => "https://semantic-ui.com/images/wireframe/image.png"}/
+          %img{:src => "https://semantic-ui.com/images/wireframe/image.png"}/
+      .item
+        Видео:
+        %br/
+        %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+        :allowfullscreen => "", :frameborder => "0", :height => "315",
+        :src => "https://www.youtube.com/embed/#{@user.video_url}", :width => "560"}
 
-= link_to "редактировать", edit_user_registration_path
+-#    <div class="sixteen wide column">
+-#      <div class="ui menu">
+-#        <a href="my_courses.html" class="item">Мои обьявления</a>
+-#        <a href="my_tasks.html" class="item">Мои задачи</a>
+-#        <a href="my_tasks.html" class="item">Мои сообщения</a>
+-#        <a href="my_tasks.html" class="item">Уведомления</a>
+-#        <a href="my_tasks.html" class="item">мой счет</a>
+-#        <div class="right menu">
+-#          <a href="edit_prodile.html" class="ui item">
+-#            Редактировать
+-#          </a>
+-#        </div>
+-#      </div>
+-#    </div>
+

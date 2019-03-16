@@ -3,6 +3,9 @@
     .ui.medium.circular.image
       = image_tag "https://semantic-ui.com/images/wireframe/image.png"
   .seven.wide.column
+    .item
+      предмет обучения:
+      = @course.category.name
     - if @course.c_username.present?
       .ui.list
         .item
@@ -23,14 +26,20 @@
         .item
           цена:
           = @course.price
+    - if @course.c_education.present?
+      .ui.list
+        .item
+          образование:
+          = @course.c_education
   .four.wide.column
     = link_to "редактировать", edit_course_path(@course), class: 'ui button blue'
     = link_to "удалить", course_path(@course), method: :delete, class: 'ui button red'
-  .sixteen.wide.column
-    %h2 Описание:
-    - if @course.body.present?
-      = @course.body
-    - if @course.c_video_url.present?
+  - if @course.body.present?
+    .sixteen.wide.column
+      %h2 Описание:
+      %p= @course.body
+  - if @course.c_video_url.present?
+    .sixteen.wide.column
       %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/#{@course.c_video_url}", :width => "560"}
 
 -#      <div class="item">вид обучения: вид</div>
