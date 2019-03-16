@@ -31,6 +31,11 @@
         .item
           образование:
           = @course.c_education
+    - if @course.c_age.present?
+      .ui.list
+        .item
+          возраст:
+          = @course.c_age
   .four.wide.column
     = link_to "редактировать", edit_course_path(@course), class: 'ui button blue'
     = link_to "удалить", course_path(@course), method: :delete, class: 'ui button red'

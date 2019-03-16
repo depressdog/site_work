@@ -1,29 +1,51 @@
 = form_for @course, html: {class: 'ui form'} do |f|
+  .field.required
+    = f.label :category_id
+    = f.collection_select :category_id, Category.order(:name), :id, :name, { include_blank: true}
   .field
     = f.label :c_username
-    = f.text_field :c_username, value: current_user.username
+    - if @course.c_username.present?
+      = f.text_field :c_username, value: @course.c_username
+    - else
+      = f.text_field :c_username, value: current_user.username
+
   .field
     = f.label :c_phone
-    = f.text_field :c_phone, value: current_user.phonenumber
+    - if @course.c_phone.present?
+      = f.text_field :c_phone, value: @course.c_phone
+    - else
+      = f.text_field :c_phone, value: current_user.phonenumber
   .field
     = f.label :c_email
-    = f.text_field :c_email, value: current_user.email
+    - if @course.c_email.present?
+      = f.text_field :c_email, value: @course.c_email
+    - else
+      = f.text_field :c_email, value: current_user.email
   .field
     = f.label :price
     = f.text_field :price
   .field
     = f.label :c_education
-    = f.text_field :c_education, value: current_user.education
+    - if @course.c_education.present?
+      = f.text_field :c_education, value: @course.c_education
+    - else
+      = f.text_field :c_education, value: current_user.education
   .field
     = f.label :c_age
-    = f.text_field :c_age, value: current_user.age
-  .field
-    = f.label :category_id
-    = f.collection_select :category_id, Category.order(:name), :id, :name, { include_blank: true}
+    - if @course.c_age.present?
+      = f.text_field :c_age, value: @course.c_age
+    - else
+      = f.text_field :c_age, value: current_user.age
   .field
     = f.label :c_video_url
-    = f.text_field :c_video_url, value: current_user.video_url
+    - if @course.c_video_url.present?
+      = f.text_field :c_video_url, value: @course.c_video_url
+    - else
+      = f.text_field :c_video_url, value: current_user.video_url
   .field
     = f.label :body
-    = f.text_area :body, value: current_user.body
+    - if @course.body.present?
+      = f.text_area :body, value: @course.body
+    - else
+      = f.text_area :body, value: current_user.body
   = f.submit "submit", class: 'ui button green'

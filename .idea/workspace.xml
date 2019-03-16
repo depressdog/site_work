@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9216cc0-7907-415f-a035-6d08c2d7968e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/views/courses/_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/courses/_form.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/views/courses/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/courses/show.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/confirmations/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/confirmations/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/passwords/edit.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/passwords/edit.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/passwords/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/passwords/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/devise/unlocks/new.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/devise/unlocks/new.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/users/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/users/show.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -25,20 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../app/views/categories/show.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../app/views/courses/show.html.haml">
+        <entry file="file://$PROJECT_DIR$/../app/views/courses/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="704">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -113,7 +100,6 @@
         <option value="$PROJECT_DIR$/../app/models/course.rb" />
         <option value="$PROJECT_DIR$/../app/models/user.rb" />
         <option value="$PROJECT_DIR$/../app/controllers/courses_controller.rb" />
-        <option value="$PROJECT_DIR$/../app/views/courses/_form.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/registrations/edit.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/shared/_links.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/sessions/new.html.haml" />
@@ -123,10 +109,11 @@
         <option value="$PROJECT_DIR$/../app/views/devise/unlocks/new.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/passwords/edit.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/courses/show.html.haml" />
+        <option value="$PROJECT_DIR$/../app/views/courses/_form.html.haml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="950" />
     <option name="height" value="1048" />
   </component>
@@ -355,12 +342,12 @@
       <workItem from="1552553418957" duration="14575000" />
       <workItem from="1552637064054" duration="5373000" />
       <workItem from="1552645152604" duration="9258000" />
-      <workItem from="1552723950819" duration="3909000" />
+      <workItem from="1552723950819" duration="5508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47656000" />
+    <option name="totallyTimeSpent" value="49255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1050" extended-state="6" />
@@ -455,13 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.zshrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -600,13 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/courses/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/views/users/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -704,6 +677,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.zshrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/views/courses/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../app/views/categories/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -711,10 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/courses/show.html.haml">
+    <entry file="file://$PROJECT_DIR$/../app/views/courses/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="704">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
