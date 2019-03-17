@@ -36,9 +36,13 @@
         .item
           возраст:
           = @course.c_age
-  .four.wide.column
-    = link_to "редактировать", edit_course_path(@course), class: 'ui button blue'
-    = link_to "удалить", course_path(@course), method: :delete, class: 'ui button red'
+          = @course.user_id
+  - if user_signed_in? && @course.user_id === current_user.id
+    .four.wide.column
+      = link_to "редактировать", edit_course_path(@course), class: 'ui button blue'
+      = link_to "удалить", course_path(@course), method: :delete, class: 'ui button red'
+
+
   - if @course.body.present?
     .sixteen.wide.column
       %h2 Описание:

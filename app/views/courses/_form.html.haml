@@ -2,25 +2,25 @@
   .field.required
     = f.label :category_id
     = f.collection_select :category_id, Category.order(:name), :id, :name, { include_blank: true}
-  .field
-    = f.label :c_username
-    - if @course.c_username.present?
-      = f.text_field :c_username, value: @course.c_username
-    - else
-      = f.text_field :c_username, value: current_user.username
-
-  .field
-    = f.label :c_phone
-    - if @course.c_phone.present?
-      = f.text_field :c_phone, value: @course.c_phone
-    - else
-      = f.text_field :c_phone, value: current_user.phonenumber
-  .field
-    = f.label :c_email
-    - if @course.c_email.present?
-      = f.text_field :c_email, value: @course.c_email
-    - else
-      = f.text_field :c_email, value: current_user.email
+  .three.fields
+    .field
+      = f.label :c_username
+      - if @course.c_username.present?
+        = f.text_field :c_username, value: @course.c_username
+      - else
+        = f.text_field :c_username, value: current_user.username
+    .field
+      = f.label :c_phone
+      - if @course.c_phone.present?
+        = f.text_field :c_phone, value: @course.c_phone
+      - else
+        = f.text_field :c_phone, value: current_user.phonenumber
+    .field
+      = f.label :c_email
+      - if @course.c_email.present?
+        = f.text_field :c_email, value: @course.c_email
+      - else
+        = f.text_field :c_email, value: current_user.email
   .field
     = f.label :price
     = f.text_field :price

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9216cc0-7907-415f-a035-6d08c2d7968e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/filters_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/filters_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/views/courses/_form.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/courses/_form.html.haml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/views/courses/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/courses/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/views/home/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/home/index.html.haml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,10 +25,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../app/views/courses/_form.html.haml">
+        <entry file="file://$PROJECT_DIR$/../app/views/courses/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="414">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -37,12 +40,12 @@
       <find>set_course</find>
       <find>course</find>
       <find>c_username</find>
-      <find>main</find>
       <find>scoped_views</find>
       <find>reset_password_keys</find>
       <find>confirmation_keys</find>
       <find>authentication_keys</find>
       <find>email</find>
+      <find>main</find>
     </findStrings>
     <replaceStrings>
       <replace>set_category</replace>
@@ -51,6 +54,7 @@
       <replace>category</replace>
       <replace>@categories</replace>
       <replace>filters_app</replace>
+      <replace>filters</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -59,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/courses/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/courses/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.haml" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -83,9 +86,7 @@
         <option value="$PROJECT_DIR$/../config/environments/development.rb" />
         <option value="$PROJECT_DIR$/../db/migrate/20190314120714_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/../config/routes.rb" />
-        <option value="$PROJECT_DIR$/../config/database.yml" />
         <option value="$PROJECT_DIR$/../app/models/validatable.rb" />
-        <option value="$USER_HOME$/.zshrc" />
         <option value="$PROJECT_DIR$/../config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/../db/migrate/20190315103300_update_index_on_users.rb" />
         <option value="$PROJECT_DIR$/../app/controllers/users_controller.rb" />
@@ -108,13 +109,17 @@
         <option value="$PROJECT_DIR$/../app/views/devise/confirmations/new.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/unlocks/new.html.haml" />
         <option value="$PROJECT_DIR$/../app/views/devise/passwords/edit.html.haml" />
-        <option value="$PROJECT_DIR$/../app/views/courses/show.html.haml" />
+        <option value="$PROJECT_DIR$/../config/database.yml" />
+        <option value="$USER_HOME$/.zshrc" />
         <option value="$PROJECT_DIR$/../app/views/courses/_form.html.haml" />
+        <option value="$PROJECT_DIR$/../app/views/home/index.html.haml" />
+        <option value="$PROJECT_DIR$/../app/views/courses/show.html.haml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="950" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="1280" />
+    <option name="width" value="1280" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -125,84 +130,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="site_work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="site_work" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="site_work" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="site_work" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="courses" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="site_work" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="site_work" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
-              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -211,6 +180,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -343,18 +313,21 @@
       <workItem from="1552637064054" duration="5373000" />
       <workItem from="1552645152604" duration="9258000" />
       <workItem from="1552723950819" duration="5508000" />
+      <workItem from="1552816146692" duration="238000" />
+      <workItem from="1552816454541" duration="412000" />
+      <workItem from="1552821435990" duration="1147000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49255000" />
+    <option name="totallyTimeSpent" value="51052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1050" extended-state="6" />
+    <frame x="1280" y="0" width="1280" height="1048" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1664888" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18800648" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -428,13 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -604,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/home/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/views/devise/passwords/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -677,20 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.zshrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../app/views/courses/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/views/categories/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -698,10 +643,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.zshrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1402">
+          <caret line="121" column="38" selection-start-line="121" selection-start-column="38" selection-end-line="121" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../app/views/courses/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="506">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/views/home/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../app/views/courses/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
