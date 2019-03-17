@@ -1,7 +1,7 @@
 .ui.grid
   .five.wide.column
     .ui.medium.circular.image
-      %img{:alt => "", :src => "https://semantic-ui.com/images/wireframe/image.png"}/
+      = image_tag @user.avatar.url(:large) if @user.avatar?
     %br/
     = link_to "редактировать", edit_user_registration_path, class: 'fluid ui button blue'
     = link_to "1", edit_user_registration_path, class: 'fluid ui button green'

@@ -1,9 +1,10 @@
 .ui.grid
   .five.wide.column
     .ui.medium.circular.image
-      = image_tag "https://semantic-ui.com/images/wireframe/image.png"
+      = image_tag @user.avatar.url(:large) if @user.avatar?
   .seven.wide.column
     .item
+
       предмет обучения:
       = @course.category.name
     - if @course.c_username.present?

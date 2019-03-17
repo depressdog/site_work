@@ -10,6 +10,8 @@ class User < ApplicationRecord
   attr_writer :login
   attr_accessor :skip_email_validation
 
+  mount_uploader :avatar, AvatarUploader
+
   def login
     @login || self.phonenumber
   end

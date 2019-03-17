@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
       devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
       devise_parameter_sanitizer.permit :account_update, keys: [:phonenumber, :email, :username, :password,
                                                                 :password_confirmation, :remember_me, :education,
-                                                                :video_url, :age, :body]
+                                                                :video_url, :age, :body, :avatar]
     end
 end
