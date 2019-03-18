@@ -2,7 +2,6 @@
   %a.ui.small.image{:href => "#{course_path(course)}"}
     =image_tag course.user.avatar.url(:thumb) if course.user.avatar?
   .content
-    -#= @user.name
     - if course.c_username.present?
       = link_to course.c_username, course_path(course)
     .meta
