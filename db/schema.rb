@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_17_122412) do
+ActiveRecord::Schema.define(version: 2019_03_18_095000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,16 @@ ActiveRecord::Schema.define(version: 2019_03_17_122412) do
     t.integer "age"
     t.text "body"
     t.string "avatar"
+    t.string "image1"
+    t.string "image2"
+    t.string "image3"
+    t.string "image4"
+    t.string "image5"
+    t.string "image6"
+    t.string "image7"
+    t.string "image8"
+    t.string "image9"
+    t.string "image10"
     t.index ["phonenumber"], name: "index_users_on_phonenumber", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

@@ -11,6 +11,16 @@ class User < ApplicationRecord
   attr_accessor :skip_email_validation
 
   mount_uploader :avatar, AvatarUploader
+  mount_uploader :image1, AvatarUploader
+  mount_uploader :image2, AvatarUploader
+  mount_uploader :image3, AvatarUploader
+  mount_uploader :image4, AvatarUploader
+  mount_uploader :image5, AvatarUploader
+  mount_uploader :image6, AvatarUploader
+  mount_uploader :image7, AvatarUploader
+  mount_uploader :image8, AvatarUploader
+  mount_uploader :image9, AvatarUploader
+  mount_uploader :image10, AvatarUploader
 
   def login
     @login || self.phonenumber

@@ -28,13 +28,52 @@
     = f.label :body
     %br/
     = f.text_area :body
-  .two.fields
+  .three.fields
     .field
       = f.label :video_url
       = f.text_field :video_url
     .field
+      = f.label :avatar
       = f.file_field :avatar
-
+    .field
+      - if @user.avatar?
+        = image_tag @user.avatar.thumb.url
+        %div
+          = label_tag :remove_avatar do
+            Remove image
+            \#{f.check_box :remove_avatar}
+  .five.fields
+    .field
+      = f.label :image1
+      = f.file_field :image1
+    .field
+      = f.label :image2
+      = f.file_field :image2
+    .field
+      = f.label :image3
+      = f.file_field :image3
+    .field
+      = f.label :image4
+      = f.file_field :image4
+    .field
+      = f.label :image5
+      = f.file_field :image5
+  .five.fields
+    .field
+      = f.label :image6
+      = f.file_field :image6
+    .field
+      = f.label :image7
+      = f.file_field :image7
+    .field
+      = f.label :image8
+      = f.file_field :image8
+    .field
+      = f.label :image9
+      = f.file_field :image9
+    .field
+      = f.label :image10
+      = f.file_field :image10
   .two.fields
     .field
       = f.label :password
