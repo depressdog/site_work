@@ -49,7 +49,7 @@
       %h2 Описание:
       %p= @course.body
   - if @course.image1? || @course.image2? || @course.image3? || @course.image4? || @course.image5? || @course.image6? || @course.image7? || @course.image8? || @course.image9? || @course.image10?
-    .item
+    .sixteen.wide.column
       Фото:
       .ui.small.images
         = image_tag @course.image1.url(:thumb) if @course.image1?

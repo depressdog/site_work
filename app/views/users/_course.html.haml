@@ -1,0 +1,16 @@
+.item
+  %a.ui.small.image{:href => "#{course_path(course)}"}
+    =image_tag course.user.avatar.url(:thumb) if course.user.avatar?
+  .content
+    - if course.c_username.present?
+      = link_to course.c_username, course_path(course)
+    .meta
+      - if course.price.present?
+        цена:
+        = course.price
+      - if course.category.present?
+        = link_to course.category.name, course.category
+
+    - if course.body.present?
+      .description
+        = course.body

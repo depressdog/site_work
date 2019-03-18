@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :users, only: [:show]
+  get 'users/courses/:id', to: 'users#my_courses', as: 'mycourses'
   resources :courses
   resources :categories
   root 'home#index'

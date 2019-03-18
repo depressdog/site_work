@@ -4,7 +4,7 @@
       = image_tag @user.avatar.url(:large) if @user.avatar?
     %br/
     = link_to "редактировать", edit_user_registration_path, class: 'fluid ui button blue'
-    = link_to "1", edit_user_registration_path, class: 'fluid ui button green'
+    = link_to "Мои обьявления", mycourses_path(@user.id), class: 'fluid ui button green'
     = link_to "2", edit_user_registration_path, class: 'fluid ui button red'
 
   .eleven.wide.column

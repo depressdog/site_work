@@ -5,4 +5,7 @@ class UsersController < ApplicationController
   def create
     @user.skip_email_validation = true
   end
+  def my_courses
+    @courses = Course.where(user_id: params[:id])
+  end
 end
