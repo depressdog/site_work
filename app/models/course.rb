@@ -1,6 +1,8 @@
 class Course < ApplicationRecord
+  belongs_to :subcategory
   belongs_to :category
   belongs_to :user
+
 
   mount_uploader :image1, AvatarUploader
   mount_uploader :image2, AvatarUploader
