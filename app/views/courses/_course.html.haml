@@ -1,8 +1,6 @@
 .item
   %a.ui.small.image{:href => "#{course_path(course)}"}
-    -#= image_tag @user.avatar.url(:large) if @user.avatar?
-    = course.user_id
-    = image_tag "https://semantic-ui.com/images/avatar2/large/kristy.png"
+    =image_tag course.user.avatar.url(:thumb) if course.user.avatar?
   .content
     -#= @user.name
     - if course.c_username.present?

@@ -14,12 +14,10 @@ class CoursesController < ApplicationController
     else
       @courses = Course.all.order('updated_at DESC')
     end
-    # @user = User.find(@course.user_id)
 
   end
 
   def show
-    @user = User.find(@course.user_id)
   end
 
   def new

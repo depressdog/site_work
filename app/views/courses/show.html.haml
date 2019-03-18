@@ -1,7 +1,7 @@
 .ui.grid
   .five.wide.column
     .ui.medium.circular.image
-      = image_tag @user.avatar.url(:large) if @user.avatar?
+      = image_tag @course.user.avatar.url(:large) if @course.user.avatar?
   .seven.wide.column
     .item
 

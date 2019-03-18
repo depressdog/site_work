@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :timeoutable, :lockable,
          authentication_keys: [:login]
 
-  has_many :courses
+  has_many :courses, dependent: :destroy
 
   attr_writer :login
   attr_accessor :skip_email_validation
