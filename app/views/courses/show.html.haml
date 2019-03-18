@@ -48,6 +48,20 @@
     .sixteen.wide.column
       %h2 Описание:
       %p= @course.body
+  - if @course.image1? || @course.image2? || @course.image3? || @course.image4? || @course.image5? || @course.image6? || @course.image7? || @course.image8? || @course.image9? || @course.image10?
+    .item
+      Фото:
+      .ui.small.images
+        = image_tag @course.image1.url(:thumb) if @course.image1?
+        = image_tag @course.image2.url(:thumb) if @course.image2?
+        = image_tag @course.image3.url(:thumb) if @course.image3?
+        = image_tag @course.image4.url(:thumb) if @course.image4?
+        = image_tag @course.image5.url(:thumb) if @course.image5?
+        = image_tag @course.image6.url(:thumb) if @course.image6?
+        = image_tag @course.image7.url(:thumb) if @course.image7?
+        = image_tag @course.image8.url(:thumb) if @course.image8?
+        = image_tag @course.image9.url(:thumb) if @course.image9?
+        = image_tag @course.image10.url(:thumb) if @course.image10?
   - if @course.c_video_url.present?
     .sixteen.wide.column
       %iframe{:allow => "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", :allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/#{@course.c_video_url}", :width => "560"}
