@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9216cc0-7907-415f-a035-6d08c2d7968e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/filters_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/filters_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/controllers/courses_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../app/controllers/courses_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/courses/_course.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/courses/_course.html.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/views/courses/show.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/views/courses/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -25,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../app/views/courses/_course.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -100,7 +103,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/categories/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/views/categories/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/_menu.html.haml" />
@@ -151,10 +153,11 @@
         <option value="$PROJECT_DIR$/../app/views/courses/_course.html.haml" />
         <option value="$PROJECT_DIR$/../app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/../app/views/courses/show.html.haml" />
+        <option value="$PROJECT_DIR$/../.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="940" />
     <option name="height" value="1048" />
   </component>
@@ -204,6 +207,11 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="courses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="filters_app" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,12 +361,12 @@
       <workItem from="1552816454541" duration="412000" />
       <workItem from="1552821435990" duration="1147000" />
       <workItem from="1552825131333" duration="9454000" />
-      <workItem from="1552893374844" duration="3355000" />
+      <workItem from="1552893374844" duration="3410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63861000" />
+    <option name="totallyTimeSpent" value="63916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1050" extended-state="6" />
@@ -390,13 +398,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../app/models/validatable.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -709,6 +710,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
