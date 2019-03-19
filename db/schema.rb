@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_18_115625) do
+ActiveRecord::Schema.define(version: 2019_03_19_083806) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,7 +49,9 @@ ActiveRecord::Schema.define(version: 2019_03_18_115625) do
     t.string "image8"
     t.string "image9"
     t.string "image10"
+    t.integer "subcategory_id"
     t.index ["category_id"], name: "index_courses_on_category_id"
+    t.index ["subcategory_id"], name: "index_courses_on_subcategory_id"
   end
 
   create_table "subcategories", force: :cascade do |t|

@@ -4,6 +4,13 @@ class Course < ApplicationRecord
   belongs_to :user
 
 
+
+  def self.search(c_username, category_id)
+    self.where("category_id = ? and c_username LIKE ?", "#{category_id}", "%#{c_username}%")
+  end
+
+
+
   mount_uploader :image1, AvatarUploader
   mount_uploader :image2, AvatarUploader
   mount_uploader :image3, AvatarUploader
@@ -14,8 +21,4 @@ class Course < ApplicationRecord
   mount_uploader :image8, AvatarUploader
   mount_uploader :image9, AvatarUploader
   mount_uploader :image10, AvatarUploader
-
-  def self.search(c_username, category_id)
-    self.where("category_id = ? and c_username LIKE ?", "#{category_id}", "%#{c_username}%")
-  end
 end

@@ -26,25 +26,31 @@ class CoursesController < ApplicationController
   def create
     @course = current_user.courses.build(course_params)
     if @course.save
-      redirect_to @course
+      redirect_to root_path
     else
-      render :new
+      redirect_to new_course_path
     end
   end
   def edit
+    @categories = Category.all.order(:name)
+    @subcategories = Subcategory.all.order(:name)
+
   end
   def update
     if @course.update_attributes(course_params)
       redirect_to @course
     else
-      render :edit
+      redirect_to edit_course_path
     end
   end
   def destroy
     @course.destroy
     redirect_to courses_path
   end
-
+  def update_sub_categories
+    @cats = Subcategory.where(category_id: params[:category_id]).all
+    respond_with(@cats)
+  end
   protected
     def set_course
       @course = Course.find(params[:id])
@@ -52,7 +58,7 @@ class CoursesController < ApplicationController
 
     def course_params
       params.require(:course).permit(:c_username, :body, :c_phone, :c_email, :c_education, :c_age, :c_video_url,
-                                     :price, :category_id,:image1, :image2, :image3, :image4, :image5, :image6,
+                                     :price, :category_id, :subcategory_id, :image1, :image2, :image3, :image4, :image5, :image6,
                                      :image7, :image8, :image9, :image10)
     end
 end

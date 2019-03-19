@@ -1,7 +1,30 @@
 = form_for @course, html: {class: 'ui form'} do |f|
-  .field.required
-    = f.label :category_id
-    = f.collection_select :category_id, Category.order(:name), :id, :name, { include_blank: true}
+
+  .two.fields
+    .grouped.fields
+      %p cat
+      -#- @categories.each_with_index  do |category, index|
+      -#  .field
+      -#    .ui
+      -#      = f.radio_button(:category_id, category.id)
+      -#      = f.label(:category_id, category.name)
+      -#      - if category.id === index
+      -#        1
+      -#      - else
+      -#        = category.id
+      -#- Subcategory.all.each do |subcategory|
+      -#  .field
+      -#    .ui
+      -#      = f.radio_button(:subcategory_id, subcategory.id)
+      -#      = f.label(:subcategory_id, subcategory.name)
+      = f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}
+      = f.collection_select :subcategory_id, Subcategory.all, :id, :name, {prompt: "Choose a subcategory"}
+
+
+    .field.required
+      -#= f.label :subcategory_id
+      -#= f.collection_select :subcategory_id, Subcategory.find(params[category_id]).order(:name), :id, :name, { include_blank: true}
+
   .three.fields
     .field
       = f.label :c_username
