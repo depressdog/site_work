@@ -7,9 +7,8 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   resources :courses
 
-  resources :categories do
-    resources :subcategories
-  end
+  resources :categories
+  resources :subcategories
 
   root 'home#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

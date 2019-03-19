@@ -1,2 +1,17 @@
-%h1 Subcategories#index
-%p Find me in app/views/subcategories/index.html.haml
+= link_to "новая категория", new_subcategory_path, class: 'ui button yellow'
+
+%table.ui.celled.table
+  %thead
+    %tr
+      %th parent
+      %th название
+      %th
+  %tbody
+    - @subcategory.each do |subcategory|
+      %tr
+        %th= subcategory.category.name
+        %th
+          = link_to subcategory.name, subcategory_path(subcategory)
+        %th
+          =link_to "изменить", edit_subcategory_path(subcategory), class: 'ui button blue'
+          =link_to "удалить", subcategory_path(subcategory), method: :delete, class: 'ui button blue'

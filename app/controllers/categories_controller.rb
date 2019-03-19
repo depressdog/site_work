@@ -2,9 +2,10 @@ class CategoriesController < ApplicationController
   before_action :set_category, only: [:destroy, :show, :edit, :update]
   def index
     @categories = Category.all
+    # @subcategories = Subcategory.find(params[:id])
   end
   def show
-    @courses = Course.where(category_id: [@category.subtree_ids]).order("updated_at DESC")
+    @courses = Course.where(category_id: params[:id]).order("updated_at DESC")
   end
   def new
     @category = Category.new
