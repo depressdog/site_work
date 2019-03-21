@@ -1,1 +1,0 @@
-$("#course_category_id").empty().append("<%= escape_javascript(render(:partial => "subcategory", :collection => @cats, :as => :cat)) %>")

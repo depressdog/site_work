@@ -1,0 +1,17 @@
+= link_to "новая категория", new_subsubcategory_path, class: 'ui button yellow'
+
+%table.ui.celled.table
+  %thead
+    %tr
+      %th parent
+      %th название
+      %th
+  %tbody
+    - @subsubcategory.each do |subsubcategory|
+      %tr
+        %th= subsubcategory.subcategory.name
+        %th
+          = link_to subsubcategory.name, subsubcategory_path(subsubcategory)
+        %th
+          =link_to "изменить", edit_subsubcategory_path(subsubcategory), class: 'ui button blue'
+          =link_to "удалить", subsubcategory_path(subsubcategory), method: :delete, class: 'ui button blue'

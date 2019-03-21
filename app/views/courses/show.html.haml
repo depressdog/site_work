@@ -7,7 +7,7 @@
 
       предмет обучения:
       = @course.category.name
-      = @course.subcategory.name
+      = @course.subcategory.name if @course.subcategory.present?
     - if @course.c_username.present?
       .ui.list
         .item

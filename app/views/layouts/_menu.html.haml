@@ -3,6 +3,7 @@
   = link_to "Обьявления", courses_path, class: 'ui button orange'
   = link_to "Категории", categories_path, class: 'ui button orange'
   = link_to "Под категории", subcategories_path, class: 'ui button orange'
+  = link_to "Под под категории", subsubcategories_path, class: 'ui button orange'
   .right.menu
     - if user_signed_in?
       = link_to "#{current_user.username if current_user.username.present?}", user_path(current_user), class: 'ui button blue'

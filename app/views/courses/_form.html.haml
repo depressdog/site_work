@@ -1,29 +1,80 @@
 = form_for @course, html: {class: 'ui form'} do |f|
 
+  -#.ui.grid
+  -#  .four.wide.column
+  -#    .ui.vertical.fluid.tabular.menu
+  -#      - Category.all.each do |category|
+  -#        %a.item{"data-tab" => "cat_#{category.id}"}
+  -#          .ui.radio.checkbox
+  -#            = f.radio_button(:category_id, category.id)
+  -#            = f.label(:category_id, category.name)
+  -#
+  -#  .nine.wide.stretched.column
+  -#    .ui.bottom.attached.tab{"data-tab" => "cat_1"}
+  -#      .ui.vertical.fluid.tabular.menu
+  -#        - Subcategory.where(category_id: 1).each do |category|
+  -#          %a.item{"data-tab" => "#{category.id}"}= category.name
+  -#    .ui.bottom.attached.tab{"data-tab" => "cat_2"}
+  -#      .ui.vertical.fluid.tabular.menu
+  -#        - Subcategory.where(category_id: 2).each do |category|
+  -#          %a.item{"data-tab" => "#{category.id}"}
+  -#            .ui.radio.checkbox
+  -#              = f.radio_button(:subcategory_id, category.id)
+  -#              = f.label(:subcategory_id, category.name)
+  -#    .ui.bottom.attached.tab{"data-tab" => "cat_3"}
+  -#      .ui.vertical.fluid.tabular.menu
+  -#        - Subcategory.where(category_id: 3).each do |category|
+  -#          %a.item{"data-tab" => "#{category.id}"}
+  -#            .ui.radio.checkbox
+  -#              = f.radio_button(:subcategory_id, category.id)
+  -#              = f.label(:subcategory_id, category.name)
+  -#    .ui.bottom.attached.tab{"data-tab" => "cat_5"}
+  -#      5
+  -#
+  -#  .three.wide.stretched.column
+  -#    .ui.bottom.attached.tab{"data-tab" => "2"}
+  -#      .ui.vertical.fluid.tabular.menu
+  -#        - Subsubcategory.where(subcategory_id: 2).each do |category|
+  -#          %a.item{"data-tab" => "#{category.id}"}
+  -#            .ui.radio.checkbox
+  -#              = f.radio_button(:subsubcategory_id, category.id)
+  -#              = f.label(:subsubcategory_id, category.name)
+  -#    .ui.bottom.attached.tab{"data-tab" => "3"}
+  -#      .ui.vertical.fluid.tabular.menu
+  -#        - Subsubcategory.where(subcategory_id: 3).each do |category|
+  -#          %a.item{"data-tab" => "#{category.id}"}
+  -#            .ui.radio.checkbox
+  -#              = f.radio_button(:subsubcategory_id, category.id)
+  -#              = f.label(:subsubcategory_id, category.name)
+  -#    .ui.bottom.attached.tab{"data-tab" => "4"}
+  -#      4
   .two.fields
     .grouped.fields
       %p cat
-      -#- @categories.each_with_index  do |category, index|
+      -#- Category.all.each_with_index do |category, index|
       -#  .field
       -#    .ui
       -#      = f.radio_button(:category_id, category.id)
       -#      = f.label(:category_id, category.name)
-      -#      - if category.id === index
-      -#        1
-      -#      - else
-      -#        = category.id
-      -#- Subcategory.all.each do |subcategory|
-      -#  .field
-      -#    .ui
-      -#      = f.radio_button(:subcategory_id, subcategory.id)
-      -#      = f.label(:subcategory_id, subcategory.name)
-      = f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}
+      -#
+      -#
+      -#
+      -#      - Subcategory.where(category_id: index).each do |subcategory|
+      -#        .field
+      -#          .ui
+      -#            = f.radio_button(:subcategory_id, subcategory.id)
+      -#            = f.label(:subcategory_id, subcategory.name)
+
+      = f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}, :onchange => "console.log('Hello world!');"
+      %p sub
       = f.collection_select :subcategory_id, Subcategory.all, :id, :name, {prompt: "Choose a subcategory"}
+      %p subsub
+      = f.collection_select :subsubcategory_id, Subsubcategory.all, :id, :name, {prompt: "Choose a subcategory"}
 
-
-    .field.required
-      -#= f.label :subcategory_id
-      -#= f.collection_select :subcategory_id, Subcategory.find(params[category_id]).order(:name), :id, :name, { include_blank: true}
+    -#
+    -#.field.required
+    -#  = f.label :subcategory_id
+    -#  = f.collection_select :subcategory_id, Subcategory.find(params[category_id]).order(:name), :id, :name, { include_blank: true}
 
   .three.fields
     .field
