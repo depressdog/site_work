@@ -73,4 +73,6 @@
 
 .ui.items
   = render @courses
+  %hr/
 
+  = react_component('Courses', {courses: @courses.to_json})
