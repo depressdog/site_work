@@ -10,6 +10,13 @@ Rails.application.routes.draw do
   resources :subcategories
   resources :subsubcategories
 
+  namespace :api do
+    namespace :v1 do
+      resource :courses, only: [:index, :create, :destroy, :update, :show]
+      resource :categories, only: [:index, :create, :destroy, :update, :show]
+    end
+  end
+
   root 'home#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

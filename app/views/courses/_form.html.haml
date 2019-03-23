@@ -1,14 +1,14 @@
 = form_for @course, html: {class: 'ui form'} do |f|
-  = react_component 'CourseForm', { course: @course}
 
+  = react_component 'CourseFormz', {categories: Category.all}
   -#.ui.grid
-  -#  .four.wide.column
-  -#    .ui.vertical.fluid.tabular.menu
-  -#      - Category.all.each do |category|
-  -#        %a.item{"data-tab" => "cat_#{category.id}"}
-  -#          .ui.radio.checkbox
-  -#            = f.radio_button(:category_id, category.id)
-  -#            = f.label(:category_id, category.name)
+    -#.four.wide.column
+    -#  .ui.vertical.fluid.tabular.menu
+    -#    - Category.all.each do |category|
+    -#      %a.item{"data-tab" => "cat_#{category.id}"}
+    -#        .ui.radio.checkbox
+    -#          = f.radio_button(:category_id, category.id)
+    -#          = f.label(:category_id, category.name)
   -#
   -#  .nine.wide.stretched.column
   -#    .ui.bottom.attached.tab{"data-tab" => "cat_1"}
@@ -66,93 +66,93 @@
       -#            = f.radio_button(:subcategory_id, subcategory.id)
       -#            = f.label(:subcategory_id, subcategory.name)
 
-  -#    = f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}, :onchange => "console.log('Hello world!');"
-  -#    %p sub
-  -#    = f.collection_select :subcategory_id, Subcategory.all, :id, :name, {prompt: "Choose a subcategory"}
-  -#    %p subsub
-  -#    = f.collection_select :subsubcategory_id, Subsubcategory.all, :id, :name, {prompt: "Choose a subcategory"}
+      -#= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}, :onchange => "console.log('Hello world!');"
+      -#%p sub
+      -#= f.collection_select :subcategory_id, Subcategory.all, :id, :name, {prompt: "Choose a subcategory"}
+      -#%p subsub
+      -#= f.collection_select :subsubcategory_id, Subsubcategory.all, :id, :name, {prompt: "Choose a subcategory"}
   -#
   -#  -#
   -#  -#.field.required
   -#  -#  = f.label :subcategory_id
   -#  -#  = f.collection_select :subcategory_id, Subcategory.find(params[category_id]).order(:name), :id, :name, { include_blank: true}
   -#
-  -#.three.fields
-  -#  .field
-  -#    = f.label :c_username
-  -#    - if @course.c_username.present?
-  -#      = f.text_field :c_username, value: @course.c_username
-  -#    - else
-  -#      = f.text_field :c_username, value: current_user.username
-  -#  .field
-  -#    = f.label :c_phone
-  -#    - if @course.c_phone.present?
-  -#      = f.text_field :c_phone, value: @course.c_phone
-  -#    - else
-  -#      = f.text_field :c_phone, value: current_user.phonenumber
-  -#  .field
-  -#    = f.label :c_email
-  -#    - if @course.c_email.present?
-  -#      = f.text_field :c_email, value: @course.c_email
-  -#    - else
-  -#      = f.text_field :c_email, value: current_user.email
-  -#.field
-  -#  = f.label :price
-  -#  = f.text_field :price
-  -#.field
-  -#  = f.label :c_education
-  -#  - if @course.c_education.present?
-  -#    = f.text_field :c_education, value: @course.c_education
-  -#  - else
-  -#    = f.text_field :c_education, value: current_user.education
-  -#.field
-  -#  = f.label :c_age
-  -#  - if @course.c_age.present?
-  -#    = f.text_field :c_age, value: @course.c_age
-  -#  - else
-  -#    = f.text_field :c_age, value: current_user.age
-  -#.field
-  -#  = f.label :c_video_url
-  -#  - if @course.c_video_url.present?
-  -#    = f.text_field :c_video_url, value: @course.c_video_url
-  -#  - else
-  -#    = f.text_field :c_video_url, value: current_user.video_url
-  -#.field
-  -#  = f.label :body
-  -#  - if @course.body.present?
-  -#    = f.text_area :body, value: @course.body
-  -#  - else
-  -#    = f.text_area :body, value: current_user.body
-  -#.five.fields
-  -#  .field
-  -#    = f.label :image1
-  -#    = f.file_field :image1
-  -#  .field
-  -#    = f.label :image2
-  -#    = f.file_field :image2
-  -#  .field
-  -#    = f.label :image3
-  -#    = f.file_field :image3
-  -#  .field
-  -#    = f.label :image4
-  -#    = f.file_field :image4
-  -#  .field
-  -#    = f.label :image5
-  -#    = f.file_field :image5
-  -#.five.fields
-  -#  .field
-  -#    = f.label :image6
-  -#    = f.file_field :image6
-  -#  .field
-  -#    = f.label :image7
-  -#    = f.file_field :image7
-  -#  .field
-  -#    = f.label :image8
-  -#    = f.file_field :image8
-  -#  .field
-  -#    = f.label :image9
-  -#    = f.file_field :image9
-  -#  .field
-  -#    = f.label :image10
-  -#    = f.file_field :image10
-  -#= f.submit "submit", class: 'ui button green'
+  .three.fields
+    .field
+      = f.label :c_username
+      - if @course.c_username.present?
+        = f.text_field :c_username, value: @course.c_username
+      - else
+        = f.text_field :c_username, value: current_user.username
+    .field
+      = f.label :c_phone
+      - if @course.c_phone.present?
+        = f.text_field :c_phone, value: @course.c_phone
+      - else
+        = f.text_field :c_phone, value: current_user.phonenumber
+    .field
+      = f.label :c_email
+      - if @course.c_email.present?
+        = f.text_field :c_email, value: @course.c_email
+      - else
+        = f.text_field :c_email, value: current_user.email
+  .field
+    = f.label :price
+    = f.text_field :price
+  .field
+    = f.label :c_education
+    - if @course.c_education.present?
+      = f.text_field :c_education, value: @course.c_education
+    - else
+      = f.text_field :c_education, value: current_user.education
+  .field
+    = f.label :c_age
+    - if @course.c_age.present?
+      = f.text_field :c_age, value: @course.c_age
+    - else
+      = f.text_field :c_age, value: current_user.age
+  .field
+    = f.label :c_video_url
+    - if @course.c_video_url.present?
+      = f.text_field :c_video_url, value: @course.c_video_url
+    - else
+      = f.text_field :c_video_url, value: current_user.video_url
+  .field
+    = f.label :body
+    - if @course.body.present?
+      = f.text_area :body, value: @course.body
+    - else
+      = f.text_area :body, value: current_user.body
+  .five.fields
+    .field
+      = f.label :image1
+      = f.file_field :image1
+    .field
+      = f.label :image2
+      = f.file_field :image2
+    .field
+      = f.label :image3
+      = f.file_field :image3
+    .field
+      = f.label :image4
+      = f.file_field :image4
+    .field
+      = f.label :image5
+      = f.file_field :image5
+  .five.fields
+    .field
+      = f.label :image6
+      = f.file_field :image6
+    .field
+      = f.label :image7
+      = f.file_field :image7
+    .field
+      = f.label :image8
+      = f.file_field :image8
+    .field
+      = f.label :image9
+      = f.file_field :image9
+    .field
+      = f.label :image10
+      = f.file_field :image10
+  = f.submit "submit", class: 'ui button green'

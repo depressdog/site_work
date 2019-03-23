@@ -4,24 +4,23 @@ class CourseForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            c_username: props.course.c_username
+            category_id: props.categories.id
         };
-        this.handleC_usernameChange = this.handleC_usernameChange .bind(this);
+        this.handleidChange = this.handleidChange.bind(this);
     }
-    handleC_usernameChange(e) {
-        this.setState({ c_username: e.target.value });
+    handleidChange(e){
+        this.setState({ category_id: e.target.value });
     }
     render(){
+
         return(
-            <div>
-                <label htmlFor="c_username">c_username</label>
-                <input
-                    type="text"
-                    name="course[c_username]"
-                    value={this.state.c_username}
-                    onChange={this.handleC_usernameChange}
-                />
-                <input type="submit" value="Update Post" />
+            <div className="ui grid">
+                <select name="course[category_id]" id="course_category_id" onChange={this.handleidChange}>
+                    <option value="1">иностранные языки</option>
+                    <option value="2">разработка</option>
+                    <option value="3">верстка</option>
+                    <option value="5">другое</option>
+                </select>
             </div>
         )
     }

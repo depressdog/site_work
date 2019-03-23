@@ -27,6 +27,7 @@ guard 'livereload' do
     gif: :gif,
     jpg: :jpg,
     jpeg: :jpeg,
+    jsx: :jsx,
     # less: :less, # uncomment if you want LESS stylesheets done in browser
   }
 
@@ -51,5 +52,6 @@ guard 'livereload' do
   # file needing a full reload of the page anyway
   watch(%r{app/views/.+\.(#{rails_view_exts * '|'})$})
   watch(%r{app/helpers/.+\.rb})
+  watch(%r{app/javascript/.+\.jsx})
   watch(%r{config/locales/.+\.yml})
 end
