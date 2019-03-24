@@ -54,9 +54,8 @@ class CoursesController < ApplicationController
     end
 
     def course_params
-      params.require(:course).permit( :c_username )
-      # params.require(:course).permit(:c_username, :body, :c_phone, :c_email, :c_education, :c_age, :c_video_url,
-      #                                :price, :category_id, :subcategory_id, :subsubcategory_id, :image1, :image2, :image3, :image4, :image5, :image6,
-      #                                :image7, :image8, :image9, :image10)
+      params.require(:course).permit(:c_username, :body, :c_phone, :c_email, :c_education, :c_age, :c_video_url,
+                                     :price, :category_id, :subcategory_id, :subsubcategory_id, :image1, :image2, :image3, :image4, :image5, :image6,
+                                     :image7, :image8, :image9, :image10)
     end
 end

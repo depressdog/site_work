@@ -1,26 +1,29 @@
-import React from 'react';
+import React from 'react'
+import Category from './Category'
+import SubCategory from './SubCategory'
+import SubSubCategory from './SubSubCategory'
 
 class CourseForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            category_id: props.categories.id
+            category_id: '',
+            categories: [],
+            subcategories: [],
+            subsubcategories: []
         };
         this.handleidChange = this.handleidChange.bind(this);
     }
     handleidChange(e){
         this.setState({ category_id: e.target.value });
+        console.log(this.state.category_id)
     }
     render(){
-
         return(
-            <div className="ui grid">
-                <select name="course[category_id]" id="course_category_id" onChange={this.handleidChange}>
-                    <option value="1">иностранные языки</option>
-                    <option value="2">разработка</option>
-                    <option value="3">верстка</option>
-                    <option value="5">другое</option>
-                </select>
+            <div className="three fields">
+                <Category/>
+                <SubCategory/>
+                <SubSubCategory/>
             </div>
         )
     }
