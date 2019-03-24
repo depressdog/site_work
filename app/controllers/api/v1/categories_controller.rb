@@ -19,7 +19,7 @@ class Api::V1::CategoriesController < ApplicationController
   end
 
   def show
-    render json: Category.all
+    render json: Category.all.order('name ASC')
   end
   private
 

@@ -19,8 +19,12 @@ class Api::V1::SubcategoriesController < ApplicationController
   end
 
   def show
-    render json: Subcategory.all
+    render json: Subcategory.all.order('name asc')
   end
+  def item
+    render json: Subcategory.where(category_id: params[:id])
+  end
+
   private
 
     def subcategory_params
