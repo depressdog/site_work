@@ -1,7 +1,4 @@
 import React from 'react'
-import Category from './Category'
-import SubCategory from './SubCategory'
-import SubSubCategory from './SubSubCategory'
 
 class CourseForm extends React.Component {
     constructor(props) {
@@ -11,54 +8,57 @@ class CourseForm extends React.Component {
             categories: [],
             subcategory_id: '',
             subcategories: [],
-      			subsubcategories: []
+    		subsubcategories: []
         };
+        this.catChange = this.catChange.bind(this);
+        this.subCatChange = this.subCatChange.bind(this);
     }
-    handleInput(e) {
-     let value = e.target.value;
-     let name = e.target.name;
-     this.setState( prevState => {
-        return {
-           newUser : {
-                    ...prevState.newUser, [name]: value
-                   }
-        }
-     }, () => console.log(this.state.newUser)
-     )
- }
+
+    catChange(e){
+        this.setState({category_id: e.target.value});
+        this.getSubCat(this.state.category_id);
+    }
+    subCatChange(e){
+        this.setState({subcategory_id: e.target.value});
+        this.getSubSubCat(this.state.subcategory_id);
+    }
 
     componentDidMount(){
         fetch('/api/v1/categories')
             .then((response) => {return response.json()})
             .then((data) => {this.setState({ categories: data }) });
-            console.log(this.state.category_id)
-        fetch('/api/v1/subcategories/' + this.state.category_id )
-      			.then((response) => {return response.json()})
-      			.then((data) => {this.setState({ subcategories: data }) });
-        fetch('/api/v1/subsubcategories')
-      			.then((response) => {return response.json()})
-      			.then((data) => {this.setState({ subsubcategories: data }) });
     }
-
+    getSubCat(e){
+        fetch('/api/v1/subcategories/' + e )
+            .then((response) => {return response.json()})
+            .then((data) => {this.setState({ subcategories: data }) });
+    }
+    getSubSubCat(e){
+        fetch('/api/v1/subsubcategories/' + e )
+            .then((response) => {return response.json()})
+            .then((data) => {this.setState({ subsubcategories: data }) });
+    }
     render(){
       const category = this.state.categories.map((category) => {
           return(<option key={category.id} value={category.id}  >{category.name}</option>)
       });
-      const subcategories = this.state.subcategories.map((category) => {
-  			return(<option key={category.id} value={category.id}>{category.name}</option>)
+      const subcategories = this.state.subcategories.map((subcategory) => {
+  			return(<option key={subcategory.id} value={subcategory.id}>{subcategory.name}</option>)
   		});
-      const subsubcategory = this.state.subsubcategories.map((category) => {
-  			return(<option key={category.id} value={category.id}>{category.name}</option>)
+      const subsubcategory = this.state.subsubcategories.map((subsubcategory) => {
+  			return(<option key={subsubcategory.id} value={subsubcategory.id}>{subsubcategory.name}</option>)
   		});
+        console.log(this.state.category_id);
         return(
             <div className="three fields">
-              <select name="course[category_id]" id="course_category_id" >
-                  // <option  value="">Выбор категории</option>
+              <select onChange={this.catChange} name="course[category_id]" id="course_category_id" >
+                  <option  value="">Выбор категории</option>
                   {category}
               </select>
-              <select name="course[subcategory_id]" id="course_subcategory_id">
+              <select onChange={this.subCatChange} name="course[subcategory_id]" id="course_subcategory_id">
                 <option value="">Выбор подкатегории</option>
                 {subcategories}
+                {}
               </select>
               <select name="course[subsubcategory_id]" id="course_subsubcategory_id">
                 <option value="">Choose a category</option>

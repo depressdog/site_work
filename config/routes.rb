@@ -13,12 +13,14 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resource :courses, only: [:index, :create, :destroy, :update, :show]
-      resource :categories, only: [:index, :create, :destroy, :update, :show]
+      resource :categories
       resource :subcategories do
         get ':id', to: 'subcategories#item'
       end
 
-      resource :subsubcategories
+      resource :subsubcategories do
+      get ':id', to: 'subsubcategories#item'
+    end
     end
   end
 

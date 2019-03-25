@@ -19,7 +19,10 @@ class Api::V1::SubsubcategoriesController < ApplicationController
   end
 
   def show
-    render json: Subsubcategory.all
+    # render json: Subsubcategory.all
+  end
+  def item
+    render json: Subsubcategory.where(subcategory_id: params[:id])
   end
   private
 
